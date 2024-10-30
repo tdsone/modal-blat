@@ -1,0 +1,248 @@
+BLASTN 2.2.11 [blat]
+
+Reference:  Kent, WJ. (2002) BLAT - The BLAST-like alignment tool
+
+Query= sample1
+         (44 letters)
+
+Database: R64-1-1.fa 
+           16 sequences; 12,071,326 total letters
+
+Searching.done
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+I                                                                      87   2e-17
+I                                                                      61   1e-09
+I                                                                      14   2e+05
+VIII                                                                   73   3e-13
+VIII                                                                   34   2e-01
+VIII                                                                   28   1e+01
+VIII                                                                   26   5e+01
+VIII                                                                   14   2e+05
+XII                                                                    69   4e-12
+XIII                                                                   61   1e-09
+XIII                                                                   14   2e+05
+IV                                                                     58   7e-09
+IV                                                                     38   1e-02
+IV                                                                     36   6e-02
+IV                                                                     14   2e+05
+III                                                                    56   3e-08
+XV                                                                     52   6e-07
+XV                                                                     22   9e+02
+VI                                                                     35   1e-01
+VI                                                                     34   2e-01
+
+
+
+>I 
+          Length = 230218
+
+ Score = 87 bits (225), Expect = 2e-17
+ Identities = 44/44 (100%)
+ Strand = Plus / Plus
+
+Query: 1  ccacaccacacccacacacccacacaccacaccacacaccacac 44
+          ||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 1  ccacaccacacccacacacccacacaccacaccacacaccacac 44
+
+
+ Score = 61 bits (158), Expect = 1e-09
+ Identities = 36/39 (92%)
+ Strand = Plus / Minus
+
+Query: 2      cacaccacaccca---cacacccacacaccacaccacac 37
+              |||||||||||||   |||||||||||||||||||||||
+Sbjct: 230212 cacaccacacccacaccacacccacacaccacaccacac 230174
+
+
+ Score = 14 bits (36), Expect = 2e+05
+ Identities = 7/7 (100%)
+ Strand = Plus / Minus
+
+Query: 38     accacac 44
+              |||||||
+Sbjct: 229957 accacac 229951
+
+
+
+>VIII 
+          Length = 562643
+
+ Score = 73 bits (189), Expect = 3e-13
+ Identities = 37/37 (100%)
+ Strand = Plus / Minus
+
+Query: 1      ccacaccacacccacacacccacacaccacaccacac 37
+              |||||||||||||||||||||||||||||||||||||
+Sbjct: 562608 ccacaccacacccacacacccacacaccacaccacac 562572
+
+
+ Score = 34 bits (87), Expect = 2e-01
+ Identities = 17/17 (100%)
+ Strand = Plus / Minus
+
+Query: 1      ccacaccacacccacac 17
+              |||||||||||||||||
+Sbjct: 556915 ccacaccacacccacac 556899
+
+
+ Score = 28 bits (71), Expect = 1e+01
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+Query: 18     acccacacaccaca 31
+              ||||||||||||||
+Sbjct: 556885 acccacacaccaca 556872
+
+
+ Score = 26 bits (66), Expect = 5e+01
+ Identities = 13/13 (100%)
+ Strand = Plus / Minus
+
+Query: 32     ccacacaccacac 44
+              |||||||||||||
+Sbjct: 556848 ccacacaccacac 556836
+
+
+ Score = 14 bits (36), Expect = 2e+05
+ Identities = 7/7 (100%)
+ Strand = Plus / Minus
+
+Query: 38     accacac 44
+              |||||||
+Sbjct: 562468 accacac 562462
+
+
+
+>XII 
+          Length = 1078177
+
+ Score = 69 bits (179), Expect = 4e-12
+ Identities = 44/46 (96%)
+ Strand = Plus / Minus
+
+Query: 1       ccacaccacacccacacacccacacaccacacc-acacac-cacac 44
+               ||||||||||||||||||||||||||||||||| |||||| |||||
+Sbjct: 1065079 ccacaccacacccacacacccacacaccacacccacacacacacac 1065034
+
+
+
+>XIII 
+          Length = 924431
+
+ Score = 61 bits (158), Expect = 1e-09
+ Identities = 36/39 (92%)
+ Strand = Plus / Minus
+
+Query: 2      cacaccacaccca---cacacccacacaccacaccacac 37
+              |||||||||||||   |||||||||||||||||||||||
+Sbjct: 924422 cacaccacacccacaccacacccacacaccacaccacac 924384
+
+
+ Score = 14 bits (36), Expect = 2e+05
+ Identities = 7/7 (100%)
+ Strand = Plus / Minus
+
+Query: 38     accacac 44
+              |||||||
+Sbjct: 924318 accacac 924312
+
+
+
+>IV 
+          Length = 1531933
+
+ Score = 58 bits (151), Expect = 7e-09
+ Identities = 34/35 (97%)
+ Strand = Plus / Minus
+
+Query: 1       ccacaccacacccacacacccacacacc-acacca 34
+               |||||||||||||||||||||||||||| ||||||
+Sbjct: 1525405 ccacaccacacccacacacccacacacccacacca 1525371
+
+
+ Score = 38 bits (97), Expect = 1e-02
+ Identities = 19/19 (100%)
+ Strand = Plus / Plus
+
+Query: 1  ccacaccacacccacacac 19
+          |||||||||||||||||||
+Sbjct: 10 ccacaccacacccacacac 28
+
+
+ Score = 36 bits (92), Expect = 6e-02
+ Identities = 18/18 (100%)
+ Strand = Plus / Plus
+
+Query: 20 ccacacaccacaccacac 37
+          ||||||||||||||||||
+Sbjct: 76 ccacacaccacaccacac 93
+
+
+ Score = 14 bits (36), Expect = 2e+05
+ Identities = 7/7 (100%)
+ Strand = Plus / Plus
+
+Query: 38  accacac 44
+           |||||||
+Sbjct: 109 accacac 115
+
+
+
+>III 
+          Length = 316620
+
+ Score = 56 bits (145), Expect = 3e-08
+ Identities = 42/46 (91%)
+ Strand = Plus / Plus
+
+Query: 1   ccacaccacacccacacacccacacaccacac--cacacaccacac 44
+           ||||||||||||||||||||||||| ||||||  ||||| ||||||
+Sbjct: 72  ccacaccacacccacacacccacac-ccacacaccacac-ccacac 115
+
+
+
+>XV 
+          Length = 1091291
+
+ Score = 52 bits (134), Expect = 6e-07
+ Identities = 31/33 (94%)
+ Strand = Plus / Plus
+
+Query: 1  ccacaccacacccacacacccacacaccacacc 33
+          |||||||||||||||||  ||||||||||||||
+Sbjct: 10 ccacaccacacccacac--ccacacaccacacc 40
+
+
+ Score = 22 bits (56), Expect = 9e+02
+ Identities = 11/11 (100%)
+ Strand = Plus / Plus
+
+Query: 34 acacaccacac 44
+          |||||||||||
+Sbjct: 52 acacaccacac 62
+
+
+
+>VI 
+          Length = 270161
+
+ Score = 35 bits (90), Expect = 1e-01
+ Identities = 22/23 (96%)
+ Strand = Plus / Plus
+
+Query: 18   acccacacaccacaccacacacc 40
+            |||||||||||||||| ||||||
+Sbjct: 4800 acccacacaccacacc-cacacc 4821
+
+
+ Score = 34 bits (87), Expect = 2e-01
+ Identities = 17/17 (100%)
+ Strand = Plus / Plus
+
+Query: 1    ccacaccacacccacac 17
+            |||||||||||||||||
+Sbjct: 4765 ccacaccacacccacac 4781
+
+  Database: R64-1-1.fa
