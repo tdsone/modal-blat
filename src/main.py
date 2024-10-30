@@ -105,7 +105,7 @@ def get_sequences_df(fasta_file: str, gff_file: str) -> pd.DataFrame:
 
 
 @app.function(image=image, volumes={"/data": blat_result_vol}, timeout=600, cpu=16)
-def run_razers():
+def run_blat():
     import os
 
     print("Fetching sequences...")
@@ -147,4 +147,4 @@ def run_razers():
 
 @app.local_entrypoint()
 def local():
-    run_razers.remote()
+    run_blat.remote()
