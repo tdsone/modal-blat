@@ -1,6 +1,7 @@
+import pandas as pd
 import modal
 
-app = modal.App("razers")
+app = modal.App("blat")
 
 image = (
     modal.Image.debian_slim()
@@ -15,11 +16,28 @@ image = (
 blat_result_vol = modal.Volume.from_name("blat-results", create_if_missing=True)
 
 
-def get_sequences_df(fasta_file: str, gff_file: str):
-    import os
+def get_sequences_df(fasta_file: str, gff_file: str) -> pd.DataFrame:
+    """Extracts sequences from a fasta file using the coordinates in the gff file
 
-    print(os.listdir("/root"))
+    Args:
+        fasta_file (str)
+        gff_file (str)
 
+    Returns:
+        samples: DataFrame of the sequences.
+
+        Columns:
+        - id:
+        - chr_loss: chromosome that the sequence is on  
+        - strand_loss: strand that the sequence is on  
+        - start_loss: start coordinate of the position that the loss is computed for (downstream sample start)
+        - end_loss: end coordinate of the position that the loss is computed for (upstream of sample end)
+        - start_sample: start coordinate of the DNA sample
+        - end_sample: end coordinate of the DNA sample (inclusive!) 
+        - loss_sequence: DNA string of loss region extracted from fasta using start_loss and end_loss coordinates
+        - sample_sequence: DNA string of full sample region extracted from fasta using start_sample and end_sample coordinates 
+    """
+    
     import pandas as pd
     from Bio import SeqIO
 
